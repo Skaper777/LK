@@ -1,0 +1,79 @@
+.finance-item
+  padding: 16px 20px
+  background: $modal-bg
+  border-radius: 10px
+  margin-bottom: 5px
+
+  span
+    color: #626262
+    font-size: 12px
+
+  &--docs
+    display: grid
+    align-items: center
+    grid-template-columns: 20% 60% 20%
+
+    @media(max-width: 768px)
+      position: relative
+      display: flex
+      flex-wrap: wrap
+
+  &__actions
+    justify-self: end
+
+  &--events
+    display: grid
+    grid-template-columns: 20% 20% 60%
+
+    div:not(:last-of-type)
+      margin-right: 20px
+
+      span
+        @media(max-width: 560px)
+          display: none
+
+    @media(max-width: 560px)
+      display: flex
+      flex-wrap: wrap
+
+  &__sum
+    font-size: 16px
+    font-weight: 500
+
+  &--plus
+    .finance-item__sum
+      color: $main-color
+
+  &--minus
+    .finance-item__sum
+      color: $text-error
+
+
+// SP
+
+.sp
+  .finance-item
+    background: $sp-card-bg
+
+
+// SD
+
+.sd
+  .finance-item
+    background: white
+
+
+// White
+
+.white
+  .finance-item
+    p
+      color: $white-title-color
+
+    &--plus
+      .finance-item__sum
+        color: $main-color
+
+    &--minus
+      .finance-item__sum
+        color: $text-error

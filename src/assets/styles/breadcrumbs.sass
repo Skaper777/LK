@@ -1,0 +1,42 @@
+.breadcrumb-item
+  font-size: 20px
+  color: $title-color
+
+  &:not(:first-of-type)
+    position: relative
+    padding-left: 30px
+
+    &::before
+      position: absolute
+      left: 10px
+      top: 8px
+      content: ''
+      width: 10px
+      height: 7px
+      background: url(./img/icons/input-arrow.png) no-repeat 50%
+      transform: rotate(-90deg)
+
+
+// White
+
+.white
+  .breadcrumb-item
+    color: $white-title-color
+
+
+// SD
+
+.sd
+  .breadcrumb-item
+    &:not(:first-of-type)
+      &::before
+        background: url(./img/icons/sd-input-arrow.png) no-repeat 50%
+
+
+// SP
+
+.sp
+  .breadcrumb-item
+    &:not(:first-of-type)
+      &::before
+        background: url(./img/icons/sp-input-arrow.png) no-repeat 50%

@@ -1,0 +1,108 @@
+.mobile
+  padding: 9px 8px
+  width: 280px
+  height: 575px
+  box-sizing: border-box
+  background: url(./img/landings/phone.png)
+
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 36px 20px
+    height: 100%
+    width: 100%
+    box-sizing: border-box
+
+    &--last
+      justify-content: center
+
+  &__icon
+    width: 53px
+    height: 53px
+    border-radius: 50%
+    background-image: url(./img/icons/white-check.png)
+    background-repeat: no-repeat
+    background-size: 20px
+    background-position: 50%
+
+  &__image
+    position: relative
+
+    .file-button
+      width: 197px
+      position: absolute
+      top: 58px
+      left: calc( 50% - 98.5px )
+
+  &__titles
+    h3,
+    h4
+      margin: 0
+      margin-top: 10px
+      color: black
+
+    h4
+      font-weight: 500
+
+    textarea
+      font-family: inherit
+      font-size: 20px
+      width: 100%
+      max-width: 100%
+      padding: 0
+      font-weight: 600
+      margin-top: 10px
+      border: none
+      resize: none
+
+      &::placeholder
+        color: inherit
+
+      &:last-of-type
+        font-size: 14px
+        font-weight: 500
+
+    &-successText
+      height: 63px
+
+  .select-wrapper
+    margin-bottom: 10px
+
+  &__inputs
+    .input-wrapper
+      margin-top: 10px
+
+      .input
+        background: #EEEEEE
+        color: #484848
+
+      .input-placeholder
+        color: #484848
+
+  &__button
+    width: 202px
+    margin: 0 auto
+
+    input
+      width: 100%
+      text-align: center
+      color: #EDEDED
+      font-size: 14px
+      font-weight: 600
+      line-height: 14px
+      background: #496EB7
+      border: none
+      border-radius: 10px
+      box-sizing: border-box
+      padding: 17px 0
+
+      &::placeholder
+        color: #EDEDED
+
+
+// White
+
+.white
+  .mobile
+    background: url(./img/landings/white-phone.png)
